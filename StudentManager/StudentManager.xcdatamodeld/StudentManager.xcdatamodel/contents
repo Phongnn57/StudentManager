@@ -10,6 +10,8 @@
         <attribute name="classNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="teacher" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="studentInClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="studentInClass" inverseEntity="Student" syncable="YES"/>
+        <relationship name="teacherOfClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="teacherOfClass" inverseEntity="Teacher" syncable="YES"/>
     </entity>
     <entity name="Mark" syncable="YES">
         <attribute name="class_id" optional="YES" attributeType="String" syncable="YES"/>
@@ -29,17 +31,20 @@
         <attribute name="pathImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="student_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="studentNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="studentInClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="studentInClass" inverseEntity="Class" syncable="YES"/>
+        <relationship name="studentMark" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mark" syncable="YES"/>
     </entity>
     <entity name="Teacher" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="teacher_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="teacherOfClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="teacherOfClass" inverseEntity="Class" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Class" positionX="-171" positionY="-441" width="128" height="103"/>
-        <element name="Student" positionX="-360" positionY="-441" width="128" height="178"/>
-        <element name="Mark" positionX="-360" positionY="-207" width="128" height="133"/>
-        <element name="Teacher" positionX="16" positionY="-441" width="128" height="88"/>
+        <element name="Class" positionX="-171" positionY="-468" width="128" height="133"/>
+        <element name="Student" positionX="-396" positionY="-504" width="128" height="208"/>
+        <element name="Teacher" positionX="16" positionY="-445" width="128" height="103"/>
         <element name="Admin" positionX="-173" positionY="-603" width="128" height="90"/>
+        <element name="Mark" positionX="-234" positionY="-180" width="128" height="135"/>
     </elements>
 </model>
