@@ -1,0 +1,18 @@
+PODS:
+  - AsyncImageView (1.5.1)
+  - JSONModel (0.12.0)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+
+DEPENDENCIES:
+  - AsyncImageView (~> 1.5.1)
+  - JSONModel (~> 0.12.0)
+  - MagicalRecord (~> 2.2)
+
+SPEC CHECKSUMS:
+  AsyncImageView: 686febb2b2a923353ede67c529d257498059852d
+  JSONModel: f391da60a15e11f8fa8950fb980b8f799ae3453f
+  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
+
+COCOAPODS: 0.32.1
