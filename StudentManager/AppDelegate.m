@@ -18,11 +18,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    //UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
 //    UINavigationController *navController = [mainStoryboard instantiateViewControllerWithIdentifier:@"navLogin"];
 //    [self.window setRootViewController:navController];
-    UIViewController *root = [mainStoryboard instantiateInitialViewController];
-    [self.window setRootViewController:root];
+    //UIViewController *root = [mainStoryboard instantiateInitialViewController];
+    UIStoryboard *storyboardFile = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil]
+    ;
+    UINavigationController *navRootVC = [storyboardFile instantiateViewControllerWithIdentifier:@"naviRoot"];
+    self.window.rootViewController = navRootVC;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
