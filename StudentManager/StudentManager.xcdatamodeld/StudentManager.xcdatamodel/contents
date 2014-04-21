@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Admin" syncable="YES">
+        <attribute name="admin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Class" syncable="YES">
-        <attribute name="class_code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="class_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="teacher" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Mark" syncable="YES">
+        <attribute name="class_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="final" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mark_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mid" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="student_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sum" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <entity name="Student" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -14,11 +27,19 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pathImage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="student_Code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="student_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Teacher" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teacher_id" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="178"/>
-        <element name="Class" positionX="-54" positionY="63" width="128" height="105"/>
+        <element name="Class" positionX="-171" positionY="-441" width="128" height="103"/>
+        <element name="Student" positionX="-360" positionY="-441" width="128" height="178"/>
+        <element name="Mark" positionX="-360" positionY="-207" width="128" height="133"/>
+        <element name="Teacher" positionX="16" positionY="-441" width="128" height="88"/>
+        <element name="Admin" positionX="-173" positionY="-603" width="128" height="90"/>
     </elements>
 </model>
