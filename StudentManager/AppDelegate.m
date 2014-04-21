@@ -17,7 +17,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//    UINavigationController *navController = [mainStoryboard instantiateViewControllerWithIdentifier:@"navLogin"];
+//    [self.window setRootViewController:navController];
+    UIViewController *root = [mainStoryboard instantiateInitialViewController];
+    [self.window setRootViewController:root];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
