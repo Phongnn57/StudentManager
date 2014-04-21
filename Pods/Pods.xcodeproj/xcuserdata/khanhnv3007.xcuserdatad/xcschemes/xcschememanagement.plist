@@ -4,45 +4,65 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AFNetworkActivityLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AsyncImageView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-JSONModel.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-MagicalRecord.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0068DAF11515460083A3656F</key>
+		<key>04BF3E5A0A5D4423957650FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>295FEBE26FB9460184998DCA</key>
+		<key>0D9017FEAB034A9495E2B655</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>46D021626ED64117B9466416</key>
+		<key>3323F348AA4242DB9433825F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>814E4D75E1F643E8AF441541</key>
+		<key>4EEABCD6DCF64B44B31E632C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD480B23BC3F48D0830CB719</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E615A0AC504B4C34A7643AD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

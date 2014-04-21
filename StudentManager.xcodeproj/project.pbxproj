@@ -37,6 +37,9 @@
 		097E02761904F84B006ACF5B /* no-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 097E02751904F84B006ACF5B /* no-avatar.png */; };
 		097E02781904F84F006ACF5B /* no-avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 097E02771904F84F006ACF5B /* no-avatar@2x.png */; };
 		44921CDF3C4342E7857E6709 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA6EBBDBA344A0692682484 /* libPods.a */; };
+		8296DD8D1905277900427820 /* PPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8296DD8C1905277900427820 /* PPConstants.m */; };
+		8296DD90190527EE00427820 /* PPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8296DD8F190527EE00427820 /* PPAPIClient.m */; };
+		8296DD931905285700427820 /* PPResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8296DD921905285700427820 /* PPResponseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,12 @@
 		097E02751904F84B006ACF5B /* no-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-avatar.png"; sourceTree = "<group>"; };
 		097E02771904F84F006ACF5B /* no-avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-avatar@2x.png"; sourceTree = "<group>"; };
 		1AA6EBBDBA344A0692682484 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8296DD8B1905277900427820 /* PPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPConstants.h; sourceTree = "<group>"; };
+		8296DD8C1905277900427820 /* PPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPConstants.m; sourceTree = "<group>"; };
+		8296DD8E190527EE00427820 /* PPAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAPIClient.h; sourceTree = "<group>"; };
+		8296DD8F190527EE00427820 /* PPAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAPIClient.m; sourceTree = "<group>"; };
+		8296DD911905285700427820 /* PPResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPResponseObject.h; sourceTree = "<group>"; };
+		8296DD921905285700427820 /* PPResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPResponseObject.m; sourceTree = "<group>"; };
 		E8FB703DA5144DD08324714C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +228,8 @@
 		097E024C1904F6FB006ACF5B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8296DD8B1905277900427820 /* PPConstants.h */,
+				8296DD8C1905277900427820 /* PPConstants.m */,
 				097E02651904F72E006ACF5B /* Macro.h */,
 				097E024E1904F721006ACF5B /* SwipTable */,
 			);
@@ -259,6 +270,7 @@
 		097E026B1904F761006ACF5B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				8296DD8A190525D000427820 /* APIClient */,
 				097E026C1904F769006ACF5B /* Data */,
 			);
 			name = Manager;
@@ -284,6 +296,8 @@
 		097E026E1904F777006ACF5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8296DD911905285700427820 /* PPResponseObject.h */,
+				8296DD921905285700427820 /* PPResponseObject.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,6 +347,15 @@
 				0921F37E19051E0100061743 /* View */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		8296DD8A190525D000427820 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				8296DD8E190527EE00427820 /* PPAPIClient.h */,
+				8296DD8F190527EE00427820 /* PPAPIClient.m */,
+			);
+			name = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,11 +495,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				097E025F1904F721006ACF5B /* RMSwipeTableViewCell.m in Sources */,
+				8296DD8D1905277900427820 /* PPConstants.m in Sources */,
 				097E02621904F721006ACF5B /* SWTableViewCell.m in Sources */,
+				8296DD931905285700427820 /* PPResponseObject.m in Sources */,
 				097E02611904F721006ACF5B /* SWLongPressGestureRecognizer.m in Sources */,
 				097E02281904F10E006ACF5B /* AppDelegate.m in Sources */,
 				097E022B1904F10E006ACF5B /* StudentManager.xcdatamodeld in Sources */,
 				097E02601904F721006ACF5B /* SWCellScrollView.m in Sources */,
+				8296DD90190527EE00427820 /* PPAPIClient.m in Sources */,
 				097E025E1904F721006ACF5B /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				097E02641904F721006ACF5B /* SWUtilityButtonView.m in Sources */,
 				097E026A1904F757006ACF5B /* Util.m in Sources */,
